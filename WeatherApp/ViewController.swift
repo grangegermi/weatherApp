@@ -35,7 +35,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     func createUrl(latitude:Double,longitude:Double){
-        let url = URL(string: "https://api.open-meteo.com/v1/forecast?latitude=\(latitude.description).90&longitude=\(longitude.description)&daily=temperature_2m_max,temperature_2m_min,windspeed_10m_max&timezone=Europe%2FMoscow&start_date=2022-11-24&end_date=2022-11-24")!
+        let url = URL(string: "https://api.open-meteo.com/v1/forecast?latitude=\(latitude.description)&longitude=\(longitude.description)&daily=temperature_2m_max,temperature_2m_min,windspeed_10m_max&timezone=Europe%2FMoscow&start_date=2022-11-24&end_date=2022-11-24")!
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = "GET"
         //        urlRequest.allHTTPHeaderFields = ["auToken":"nil"]
